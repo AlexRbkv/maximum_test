@@ -1,0 +1,40 @@
+html {
+    font-size: 20px;
+    font-family: 'Roboto-Regular', sans-serif;
+    @media screen and (max-width: 460px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 360px) {
+        font-size: 12px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    max-width: 63.7rem;
+    margin: 1rem auto;
+    @media (max-width: 1360px) {
+        max-width: 41.05rem;
+    }
+    @media (max-width: 960px) {
+        max-width:20.2rem;
+    }
+}

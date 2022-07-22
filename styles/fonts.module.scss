@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Roboto-Regular';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Roboto-Regular'),
+				url("../assets/fonts/Roboto/Roboto-Regular.ttf") format('ttf'),
+				url("../assets/fonts/Roboto/Roboto-Regular.otf") format('otf'),
+				url("../assets/fonts/Roboto/Roboto-Regular.woff") format('woff'),
+				url("../assets/fonts/Roboto/Roboto-Regular.svg") format('svg'),
+}
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Roboto-Medium'),
+				url("../assets/fonts/Roboto/Roboto-Medium.ttf") format('ttf'),
+				url("../assets/fonts/Roboto/Roboto-Medium.otf") format('otf'),
+				url("../assets/fonts/Roboto/Roboto-Medium.woff") format('woff'),
+				url("../assets/fonts/Roboto/Roboto-Medium.svg") format('svg'),
+}
+
+@font-face {
+	font-family: 'Roboto-Condensed';
+	font-style: normal;
+	font-weight: normal;
+	src:	local('Roboto-Condensed'),
+				url("../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf") format('ttf'),
+				url("../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.otf") format('otf'),
+				url("../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.woff") format('woff'),
+				url("../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.svg") format('svg'),
+}

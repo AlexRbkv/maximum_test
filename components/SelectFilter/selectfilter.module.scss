@@ -1,0 +1,80 @@
+@import "../../styles/fonts.module";
+@import "../../styles/variables.module";
+
+.container {
+	max-width: 13.75rem;
+	width: 100%;
+	background-color: $dark-gray;
+	color: $milk-white;
+	margin-bottom: 1rem;
+}
+
+.title {
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+
+.filterList {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.6rem;
+	padding: 0 0.7rem 1rem 0.7rem;
+	max-width: 13.75rem;
+	background-color: $dark-gray;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+.disabled {
+	display: none!important;
+}
+
+.arrowDown {
+	transition: 0.3s ease;
+	transform: rotate(-90deg);
+}
+
+.filterItem {
+	display: flex;
+	flex-direction: row;
+	input {
+		display: none;
+		&:checked + .filterItemTitle:before {
+				content: "\2714";
+			}
+		}
+}
+
+.filterItemTitle {
+	font-size: 0.7rem;
+	color: $light-gray;
+	&:before {
+		content: " ";
+		color: $active-green;
+		display: inline-block;
+		margin-right: 0.6rem;
+		position: relative;
+		text-align: center;
+		text-indent: 0px;
+		width: 0.8rem;
+		height: 0.8rem;
+		background: $middle-gray;
+		vertical-align: text-top;
+	}
+}
+
+.filterTitleRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	cursor: pointer;
+	padding: 1rem 0.7rem;
+}
+
+.checkMark {
+	transition: 0.3s ease;
+	color: white;
+}
