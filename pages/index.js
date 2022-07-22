@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Showcase from '../components/Showcase/Showcase';
 import SelectFilter from '../components/SelectFilter/SelectFilter';
 import Spinner from '../components/Spinner/Spinner';
-import Head from 'next/head';
 
 const index = ({ cars, brands }) => {
   const [filterState, setFilterState] = useState([]); // массив брендов (строки)
@@ -27,18 +26,12 @@ const index = ({ cars, brands }) => {
   }, [filterState]);
 
   return (
-    <>
-      <Head>
-        <meta keywords="maximum test cars"></meta>
-        <title>Maximum</title>
-      </Head>
-      <main>
-        <section className="container">
-          <SelectFilter brands={brands} filterState={filterState} setFilterState={setFilterState} />
-          {isLoading ? <Spinner /> : <Showcase cars={carsList} />}
-        </section>
-      </main>
-    </>
+    <main>
+      <section className="container">
+        <SelectFilter brands={brands} filterState={filterState} setFilterState={setFilterState} />
+        {isLoading ? <Spinner /> : <Showcase cars={carsList} />}
+      </section>
+    </main>
   );
 };
 
