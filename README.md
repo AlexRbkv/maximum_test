@@ -3,7 +3,7 @@
 
 Сроки выполнения: 19.07.2022 - 22.07.2022
 
-Стек технологий: React, NextJS, Scss, FetchAPI
+Стек технологий: React, NextJS, Scss, FetchAPI, HTML5, CSS3
 
 
 # Примечания
